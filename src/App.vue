@@ -3,7 +3,12 @@
 </template>
 
 <script>
+import LearningResource from './components/learning-resources/LearningResource.vue';
+
 export default {
+  components: {
+    LearningResource,
+  },
   data() {
     return {
       storedResources: [
