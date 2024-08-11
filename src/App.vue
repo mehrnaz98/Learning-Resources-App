@@ -1,5 +1,7 @@
 <template>
-  <ul></ul>
+  <ul>
+    <learning-resource></learning-resource>
+  </ul>
 </template>
 
 <script>
