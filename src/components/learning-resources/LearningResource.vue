@@ -2,12 +2,12 @@
   <li>
     <div>
       <header>
-        <h3></h3>
+        <h3>{{ title }}</h3>
         <button>Delete</button>
       </header>
-      <p></p>
+      <p>{{ description }}</p>
       <nav>
-        <a href="">View Resource</a>
+        <a :href="link">View Resource</a>
       </nav>
     </div>
   </li>
