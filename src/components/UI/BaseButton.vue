@@ -1,5 +1,5 @@
 <template>
-  <button></button>
+  <button :type="type" :class="mode"></button>
 </template>
 
 <script>
