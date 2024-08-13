@@ -2,6 +2,11 @@
   <button></button>
 </template>
 
+<script>
+export default {
+  props: ['type', 'mode'],
+};
+</script>
 <style scoped>
 button {
   padding: 0.75rem 1.5rem;
