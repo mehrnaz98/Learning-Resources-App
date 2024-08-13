@@ -11,7 +11,12 @@
 </template>
 
 <script>
+import StoredResources from './components/learning-resources/StoredResources.vue';
+import AddResource from './AddResource.vue';
+
 export default {
+  components: { StoredResources, AddResource },
+
   data() {
     return {
       selectedTab: 'stored-resources',
