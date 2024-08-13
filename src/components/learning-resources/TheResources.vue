@@ -1,7 +1,11 @@
 <template>
   <base-card>
-    <base-button>Stored Resources</base-button>
-    <base-button>Add Resource</base-button>
+    <base-button @click="setSelectedTab('stored-resources')"
+      >Stored Resources</base-button
+    >
+    <base-button @click="setSelectedTab('add-resource')"
+      >Add Resource</base-button
+    >
   </base-card>
 </template>
 
