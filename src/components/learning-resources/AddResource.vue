@@ -13,6 +13,7 @@
         <label for="link">Link</label>
         <input id="link" name="link" type="url" />
       </div>
+      <div><base-button type="submit">Add Resource</base-button></div>
     </form>
   </base-card>
 </template>
