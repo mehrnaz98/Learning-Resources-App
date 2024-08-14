@@ -8,6 +8,7 @@
     <section>
       <slot></slot>
     </section>
+    <menu><slot name="actions"></slot></menu>
   </dialog>
 </template>
 
