@@ -18,6 +18,14 @@
   </base-card>
 </template>
 
+<script>
+export default {
+  methods: {
+    submitData() {},
+  },
+};
+</script>
+
 <style scoped>
 label {
   font-weight: bold;
