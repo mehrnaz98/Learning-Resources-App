@@ -57,6 +57,7 @@ export default {
     setSelectedTab(tab) {
       this.selectedTab = tab;
     },
+    addResource(title, description, url) {},
   },
 };
 </script>
