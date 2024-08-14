@@ -1,12 +1,13 @@
 <template>
-  <button :type="type" :class="mode"><slot></slot></button>
+  <button :class="mode"><slot></slot></button>
 </template>
 
 <script>
 export default {
-  props: ['type', 'mode'],
+  props: ['mode'],
 };
 </script>
+
 <style scoped>
 button {
   padding: 0.75rem 1.5rem;
