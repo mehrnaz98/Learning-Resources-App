@@ -1,7 +1,7 @@
 <template>
   <dialog open>
     <header>
-      <slot>
+      <slot name="header">
         <h2>{{ title }}</h2>
       </slot>
     </header>
