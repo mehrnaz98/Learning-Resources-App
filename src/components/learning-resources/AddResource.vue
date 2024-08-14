@@ -5,6 +5,14 @@
         <label for="title">Title</label>
         <input id="title" name="title" type="text" />
       </div>
+      <div class="form-control">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" row="3"></textarea>
+      </div>
+      <div class="form-control">
+        <label for="link">Link</label>
+        <input id="link" name="link" type="url" />
+      </div>
     </form>
   </base-card>
 </template>
