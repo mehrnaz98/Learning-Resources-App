@@ -3,15 +3,20 @@
     <form>
       <div class="form-control">
         <label for="title">Title</label>
-        <input id="title" name="title" type="text" />
+        <input id="title" name="title" type="text" ref="titleInput" />
       </div>
       <div class="form-control">
         <label for="description">Description</label>
-        <textarea id="description" name="description" row="3"></textarea>
+        <textarea
+          id="description"
+          name="description"
+          row="3"
+          ref="descInput"
+        ></textarea>
       </div>
       <div class="form-control">
         <label for="link">Link</label>
-        <input id="link" name="link" type="url" />
+        <input id="link" name="link" type="url" ref="linkInput" />
       </div>
       <div><base-button type="submit">Add Resource</base-button></div>
     </form>
