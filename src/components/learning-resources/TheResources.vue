@@ -1,9 +1,13 @@
 <template>
   <base-card>
-    <base-button @click="setSelectedTab('stored-resources')"
+    <base-button
+      @click="setSelectedTab('stored-resources')"
+      :mode="selectedTab === 'stored-resources' ? null : 'flat'"
       >Stored Resources</base-button
     >
-    <base-button @click="setSelectedTab('add-resource')"
+    <base-button
+      @click="setSelectedTab('add-resource')"
+      :mode="selectedTab === 'add-resource' ? null : 'flat'"
       >Add Resource</base-button
     >
   </base-card>
