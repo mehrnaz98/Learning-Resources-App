@@ -44,6 +44,7 @@ export default {
     return {
       resources: this.storedResources,
       addResource: this.addResource,
+      deleteResource: this.deleteResource,
     };
   },
   computed: {
