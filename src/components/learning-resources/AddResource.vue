@@ -42,6 +42,7 @@ export default {
         enteredDescription.trim() === '' ||
         enteredUrl.trim() === ''
       ) {
+        this.inputIsInvalid = true;
         return;
       }
       this.addResource(enteredTitle, enteredDescription, enteredUrl);
