@@ -26,6 +26,11 @@
 <script>
 export default {
   inject: ['addResource'],
+  data() {
+    return {
+      inputIsInvalid: false,
+    };
+  },
   methods: {
     submitData() {
       const enteredTitle = this.$refs.titleInput.value;
