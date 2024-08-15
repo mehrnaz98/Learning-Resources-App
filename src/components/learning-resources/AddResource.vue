@@ -1,4 +1,5 @@
 <template>
+  <base-dialog v-if="inputIsInvalid"></base-dialog>
   <base-card>
     <form @submit.prevent="submitData">
       <div class="form-control">
