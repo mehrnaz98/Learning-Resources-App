@@ -1,5 +1,16 @@
 <template>
-  <base-dialog v-if="inputIsInvalid"></base-dialog>
+  <base-dialog v-if="inputIsInvalid" title="Invalid Input">
+    <template #default>
+      <p>At least one input value is invalid.</p>
+      <p>
+        Please check all inputs and make sure you enter at least a few
+        charecters into each input field.
+      </p>
+    </template>
+    <template #action>
+      <base-button></base-button>
+    </template>
+  </base-dialog>
   <base-card>
     <form @submit.prevent="submitData">
       <div class="form-control">
@@ -25,7 +36,9 @@
 </template>
 
 <script>
+import BaseButton from '../UI/BaseButton.vue';
 export default {
+  components: { BaseButton },
   inject: ['addResource'],
   data() {
     return {
