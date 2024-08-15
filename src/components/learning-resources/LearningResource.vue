@@ -18,6 +18,7 @@ import BaseButton from '../UI/BaseButton.vue';
 export default {
   components: { BaseButton },
   props: ['title', 'description', 'link'],
+  inject: ['deleteResource'],
 };
 </script>
 
