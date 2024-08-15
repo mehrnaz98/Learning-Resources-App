@@ -8,7 +8,7 @@
       </p>
     </template>
     <template #action>
-      <base-button></base-button>
+      <base-button @click="confirmError">Okay</base-button>
     </template>
   </base-dialog>
   <base-card>
@@ -60,6 +60,9 @@ export default {
         return;
       }
       this.addResource(enteredTitle, enteredDescription, enteredUrl);
+    },
+    confirmError() {
+      this.inputIsInvalid = false;
     },
   },
 };
