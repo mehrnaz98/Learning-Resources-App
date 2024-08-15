@@ -7,7 +7,7 @@
         charecters into each input field.
       </p>
     </template>
-    <template #action>
+    <template #actions>
       <base-button @click="confirmError">Okay</base-button>
     </template>
   </base-dialog>
