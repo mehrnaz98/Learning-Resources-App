@@ -68,6 +68,11 @@ export default {
       this.storedResources.unshift(newResource);
       this.selectedTab = 'stored-resources';
     },
+    removeResource(resId) {
+      this.storedResources = this.storedResources.filter(
+        (res) => res.id !== resId
+      );
+    },
   },
 };
 </script>
